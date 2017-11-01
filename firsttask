@@ -1,0 +1,14 @@
+public class sample {
+
+    public static void main(String[] args) {
+        int physics = 70;
+        int maths = 80;
+        int chemistry = 75;
+        int biology = 69;
+        int english = 77;
+        int[] marks = {physics, maths, chemistry, biology, english};
+        int average = (physics + maths + chemistry + biology + english) / 5;
+        
+        System.out.println("Bobs Average Result is" + average);
+    }
+}
