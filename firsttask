@@ -13,7 +13,7 @@ public class sample {
             marks[z] = sc.nextInt();
             sum = sum + marks[z];
         }
-
+//
         average = sum/5;
 
         System.out.print("Average Marks of Five Subjects are = " +average);
