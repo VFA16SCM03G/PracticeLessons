@@ -1,14 +1,21 @@
 public class sample {
 
     public static void main(String[] args) {
-        int physics = 70;
-        int maths = 80;
-        int chemistry = 75;
-        int biology = 69;
-        int english = 77;
-        int[] marks = {physics, maths, chemistry, biology, english};
-        int average = (physics + maths + chemistry + biology + english) / 5;
-        
-        System.out.println("Bobs Average Result is" + average);
+
+        int marks[] = new int[5];
+        int z;
+        float sum=0;
+        float average;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the Marks Obtained in 5 Subjects : ");
+        for(z=0; z<5; z++) {
+            marks[z] = sc.nextInt();
+            sum = sum + marks[z];
+        }
+//
+        average = sum/5;
+
+        System.out.print("Average Marks of Five Subjects are = " +average);
     }
 }
